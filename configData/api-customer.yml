@@ -5,9 +5,9 @@ spring:
     name: api-customer
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3307/dh202302-g2?createDatabaseIfNotExist=true&useUnicode=true&amp&characterEncoding=utf-8&autoReconnect=true
-    username: user
-    password: password
+    url: jdbc:mysql://localhost:3307/dh-group5-dev?createDatabaseIfNotExist=true&useUnicode=true&amp&characterEncoding=utf-8&autoReconnect=true
+    username: group5-user
+    password: group5-pwd
   jpa:
     properties:
       hibernate:
