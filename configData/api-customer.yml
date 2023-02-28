@@ -4,7 +4,7 @@ spring:
   application:
     name: api-customer
   datasource:
-    driverClassName: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/dh-group5-dev
     username: group5-user
     password: group5-pwd
