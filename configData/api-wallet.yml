@@ -1,21 +1,18 @@
 server:
   port: ${PORT:${SERVER_PORT:0}}
+
 spring:
   application:
     name: api-wallet
-  datasource:
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/dh-group5-dev
-    username: group5-user
-    password: group5-pwd
   jpa:
     hibernate.ddl-auto: update
     generate-ddl: true
     show-sql: true
-
-info:
-  application:
-    name: api-wallet
+  datasource:
+    url: jdbc:mysql://localhost:3306/dh-group5-dev?createDatabaseIfNotExist=true&useUnicode=true&amp&characterEncoding=utf-8&autoReconnect=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
 eureka:
   instance:
@@ -24,5 +21,5 @@ eureka:
   client:
     registerWithEureka: true
     fetchRegistry: true
-    serviceUrl:
+    service-url:
       defaultZone: http://localhost:8761/eureka/
