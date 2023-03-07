@@ -10,11 +10,11 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: mscustomer
+        - id: api-customer
           uri: lb://api-customer
           predicates:
             - Path=/api/v1/customer/**
-        - id: mswallet
+        - id: api-wallet
           uri: lb://api-wallet
           predicates:
             - Path=/api/v1/wallet/**
