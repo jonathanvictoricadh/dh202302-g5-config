@@ -1,5 +1,5 @@
 server:
-  port: ${PORT:${SERVER_PORT:8080}}
+  port: 8080
 
 spring:
   application:
@@ -10,11 +10,11 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: api-customer
+        - id: mscustomer
           uri: lb://api-customer
           predicates:
-            - Path=/customer/**
-        - id: api-wallet
+            - Path=/customers/**
+        - id: mswallet
           uri: lb://api-wallet
           predicates:
             - Path=/wallet/**
