@@ -13,11 +13,11 @@ spring:
         - id: api-customer
           uri: lb://api-customer
           predicates:
-            - Path=/api/v1/customer/**
+            - Path=/customer/**
         - id: api-wallet
           uri: lb://api-wallet
           predicates:
-            - Path=/api/v1/wallet/**
+            - Path=/wallet/**
 
 info:
   app:
